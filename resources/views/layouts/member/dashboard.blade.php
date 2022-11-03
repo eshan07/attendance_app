@@ -19,7 +19,7 @@
             @endcan
         </div>
         <ol class="breadcrumb mb-4">
-            <li class="breadcrumb-item active">Dashboard</li>
+            <li class="breadcrumb-item active">{{auth()->user()->roles[0]->name}}</li>
         </ol>
         <h2 class="text-center">{{date('a')=='am' ? 'Good Morning!' : 'Good Evening'}}</h2>
         <h3 class="text-center text-secondary">Today is {{date('l')}}, Keep Working!</h3>
